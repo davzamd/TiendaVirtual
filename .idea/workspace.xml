@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc261f30-39f3-40a6-90f3-99e60bf52adc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/employee/controller/EmployeeControllerShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/employee/controller/EmployeeControllerShould.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/View/OnlineStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/View/OnlineStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/controller/employee/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/controller/employee/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/model/employee/domain/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/model/employee/domain/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/controller/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/controller/product/ProductController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base/controller/product/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="465">
+              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#358#359#0" expanded="true" />
@@ -216,7 +212,6 @@
         <option value="$PROJECT_DIR$/src/base/model/product/persistance/ProductDAO.java" />
         <option value="$PROJECT_DIR$/products.txt" />
         <option value="$PROJECT_DIR$/src/base/model/product/persistance/ProductDAOImp.java" />
-        <option value="$PROJECT_DIR$/src/base/controller/product/ProductController.java" />
         <option value="$PROJECT_DIR$/src/Test/product/persistance/ProductDAOImpShould.java" />
         <option value="$PROJECT_DIR$/src/base/View/EmployeeView.java" />
         <option value="$PROJECT_DIR$/src/base/View/ProductView.java" />
@@ -224,6 +219,7 @@
         <option value="$PROJECT_DIR$/src/base/model/employee/domain/Employee.java" />
         <option value="$PROJECT_DIR$/src/Test/employee/controller/EmployeeControllerShould.java" />
         <option value="$PROJECT_DIR$/src/base/View/OnlineStore.java" />
+        <option value="$PROJECT_DIR$/src/base/controller/product/ProductController.java" />
       </list>
     </option>
   </component>
@@ -471,7 +467,7 @@
       <workItem from="1557485676864" duration="11496000" />
       <workItem from="1557827330861" duration="2584000" />
       <workItem from="1557842557790" duration="14141000" />
-      <workItem from="1557904447414" duration="2774000" />
+      <workItem from="1557904447414" duration="2980000" />
     </task>
     <servers />
   </component>
@@ -508,7 +504,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30995000" />
+    <option name="totallyTimeSpent" value="31201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -763,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/controller/product/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="465">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#358#359#0" expanded="true" />

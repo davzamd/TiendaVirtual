@@ -31,4 +31,5 @@ public class ProductController {
     public boolean checkExistingCode(int code) {
         return productDAOImp.checkExistingCode(code);
     }
+    
 }
