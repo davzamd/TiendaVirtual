@@ -13,6 +13,7 @@ public class StoreManager {
     public static final int MAX_OPTION = 4;
 
     public void start() {
+        StoreView.bienvenido();
         while (true) {
             EmployeeView.login();
             StoreView.printMainMenu();
@@ -24,19 +25,19 @@ public class StoreManager {
     private void actionByOption(int option) {
         switch (option) {
             case 1:
-                System.out.println("Option 1 selected");
-                OrderManager.makeAnOrder();
+                System.out.println("Opcion 1 seleccionada");
+                OrderManager.getInstance().makeAnOrder();
                 break;
             case 2:
-                System.out.println("Option 2 selected");
-                ProductManager.modifyProducts();
+                System.out.println("Opcion 2 seleccionada");
+                ProductManager.getInstance().modifyProducts();
                 break;
             case 3:
-                System.out.println("Option 3 selected");
+                System.out.println("Opcion 3 seleccionada");
                 EmployeeView.changePassword();
                 break;
             case 4:
-                System.out.println("Option 4 selected");
+                System.out.println("Opcion 4 seleccionada");
                 EmployeeManager.getInstance().logout();
                 break;
         }

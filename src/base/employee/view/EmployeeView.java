@@ -17,6 +17,7 @@ public class EmployeeView {
     }
 
     public static void login() {
+        System.out.println("\n");
         boolean loggedIn = employeeManager.isLogged();
         while (!loggedIn) {
             try {
@@ -30,17 +31,18 @@ public class EmployeeView {
             } catch (EmployeeException e) {
                 System.out.println(e.getMessage());
             }catch (InputMismatchException e){
-                System.out.println("Invalid code, only number allowed");
+                System.out.println("Codigo invalido, solo se aceptan numeros");
                 scanner.next();
             }
         }
     }
 
     public static void changePassword() {
-        System.out.println("Changing password");
-        System.out.println("Please enter the new password");
+        System.out.println("\n");
+        System.out.println("Cambiando contraseña");
+        System.out.println("Por favor ingrese la nueva contraseña");
         String newPasswordOne = scanner.next();
-        System.out.println("Please confirm you password");
+        System.out.println("Por favor vuelva a ingresar la nueva contraseña para confirmar");
         String newPasswordTwo = scanner.next();
         employeeManager.changePassword(newPasswordOne, newPasswordTwo);
     }

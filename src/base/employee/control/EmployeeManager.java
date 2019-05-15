@@ -26,7 +26,11 @@ public class EmployeeManager {
 
     public boolean login(int code, String password) {
         employee = employeeController.authenticateEmployee(code, password);
-        return employee != null;
+        if (employee != null) {
+            System.out.printf("%n%s %s!", "Bienvenido", employee.getFirstName());
+            return true;
+        }
+        return false;
     }
 
     public void logout() {
@@ -39,10 +43,10 @@ public class EmployeeManager {
             employee.setPassword(passwordOne);
             success = employeeController.updateEmployees();
         }
-        System.out.println(success ? "Password modified successfully" : "Password didnt modify");
+        System.out.println(success ? "Password modified successfully!" : "Password didnt modify");
     }
 
-    public static String getEmployeeName(){
+    public String getEmployeeName() {
         return employee.getFirstName();
     }
 

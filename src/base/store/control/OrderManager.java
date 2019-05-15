@@ -4,7 +4,6 @@ import base.employee.control.EmployeeManager;
 import base.product.control.ProductController;
 import base.product.control.ProductManager;
 import base.product.domain.Product;
-import base.product.view.ProductView;
 import base.store.domain.Order;
 import base.store.view.OrderView;
 import base.util.InputData;
@@ -15,63 +14,78 @@ public class OrderManager {
 
     private static final int MIN_OPTION = 1;
     private static final int MAX_OPTION = 4;
-    private static ProductManager productManager;
-    private static ProductController productController;
+
+    private int quantity;
+    private int maxOption;
+
     private static Order order;
+    private boolean orderFinished;
+
+    private OrderManager() {
+        orderFinished = false;
+    }
 
     static {
         orderManager = new OrderManager();
-        productManager = ProductManager.getInstance();
-        productController = new ProductController();
     }
 
-    public static void makeAnOrder() {
-        order = new Order(EmployeeManager.getEmployeeName());
+    public static OrderManager getInstance() {
+        return orderManager;
+    }
 
-        int maxOption = productManager.getProducts().size();
+    public void makeAnOrder() {
+        order = new Order(EmployeeManager.getInstance().getEmployeeName());
+        maxOption = ProductManager.getInstance().getProducts().size();
 
         OrderView.askForProductsQuantity();
-        int quantity = InputData.getOption(1, maxOption);
+        quantity = InputData.getOption(1, maxOption);
 
         do {
             OrderView.printOrderMenu();
             int option = InputData.getOption(MIN_OPTION, MAX_OPTION);
             actionByOption(option);
-        }while (order.getProducts().size()<quantity);
+        } while (!orderFinished);
     }
 
-    private static void actionByOption(int option) {
+    private void actionByOption(int option) {
         switch (option) {
             case 1:
-                System.out.println("Option 1 selected");
-                OrderView.addProduct();
+                int currentOrderSize = order.getProducts().size();
+                System.out.println(currentOrderSize);
+                if (currentOrderSize < quantity) {
+                    System.out.println("Opcion 1 seleccionada");
+                    OrderView.addProduct();
+                } else {
+                    System.out.println("No puede añadir mas productos");
+                }
                 break;
             case 2:
-                System.out.println("Option 2 selected");
-                System.out.println("Order current price: " + order.getTotalPrice());
+                System.out.println("Opcion 2 seleccionada");
+                System.out.println("\nPrecio actual del pedido: " + order.getTotalPrice());
                 break;
             case 3:
-                System.out.println("Option 3 selected");
+                System.out.println("Opcion 3 seleccionada");
                 OrderView.printOrderBill(order);
                 break;
             case 4:
-                System.out.println("Option 4 selected");
-
+                System.out.println("Opcion 4 seleccionada");
+                orderFinished = true;
                 break;
         }
     }
 
-    public static void addProduct(int code) {
-        if (order.checkProductOnList(code)){
+    public void addProduct(int code) {
+        if (order.checkProductOnList(code)) {
             System.out.println("Producto ya existe en la lista");
             return;
         }
+        ProductController productController = new ProductController();
 
         Product product = productController.getProductByCode(code);
         if (product != null) {
             order.addProduct(product);
             System.out.println("Producto anadido exitosamente");
-        }else {
+        } else {
             System.out.println("Producto no existe");
         }
     }

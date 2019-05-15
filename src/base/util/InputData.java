@@ -19,10 +19,10 @@ public class InputData {
                 option = scanner.nextInt();
                 goodOption = option >= minOption && option <= maxOption;
                 if (!goodOption) {
-                    System.out.println("Invalid Option");
+                    System.out.println("Opcion invalida");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Invalid code, only number allowed");
+                System.out.println("Codigo invalido, solo acepta numeros");
                 scanner.next();
             }
         } while (!goodOption);

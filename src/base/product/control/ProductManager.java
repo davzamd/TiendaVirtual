@@ -29,7 +29,7 @@ public class ProductManager {
         return instance;
     }
 
-    public static void modifyProducts() {
+    public void modifyProducts() {
         ProductView.printProducts();
         ProductView.selectProduct();
         ProductView.printModifyMenu();
@@ -37,18 +37,18 @@ public class ProductManager {
         actionByOption(option);
     }
 
-    private static void actionByOption(int option) {
+    private void actionByOption(int option) {
         switch (option) {
             case 1:
-                System.out.println("Option 1 selected");
+                System.out.println("Opcion 1 seleccionada");
                 ProductView.modifyName();
                 break;
             case 2:
-                System.out.println("Option 2 selected");
+                System.out.println("Opcion 2 seleccionada");
                 ProductView.modifyPrice();
                 break;
             case 3:
-                System.out.println("Option 3 selected");
+                System.out.println("Opcion 3 seleccionada");
                 ProductView.modifyCode();
                 break;
         }
@@ -58,10 +58,10 @@ public class ProductManager {
     public boolean changeProductName(String name) {
         if (!productController.checkExistingName(name)) {
             productSelected.setName(name);
-            System.out.println("The name has been change to " + name);
+            System.out.println("El nombre a cambiado a " + name);
             return true;
         }
-        System.out.println("Name is already on list");
+        System.out.println("Ya existe un producto con el nombre " + name);
         return false;
     }
 
@@ -69,20 +69,20 @@ public class ProductManager {
         if (price > 0) {
             productSelected.setPrice(price);
             System.out.println();
-            System.out.println("The price has been change to " + price);
+            System.out.println("El precio ha cambiado a " + price);
             return true;
         }
-        System.out.println("Price cant be negative");
+        System.out.println("El precio no puede ser negativo");
         return false;
     }
 
     public boolean changeProductCode(int code) {
         if (!productController.checkExistingCode(code)) {
             productSelected.setCode(code);
-            System.out.println("The code has been change to " + code);
+            System.out.println("El codigo ha cambiado a " + code);
             return true;
         }
-        System.out.println("Code is already on list");
+        System.out.println("Ya existe un producto con es codigo " + code);
         return false;
     }
 
@@ -99,7 +99,7 @@ public class ProductManager {
         return productController.getProducts();
     }
 
-    public static void updateProducts() {
+    public void updateProducts() {
         productController.updateProducts();
     }
 }

@@ -16,13 +16,14 @@ public class Order {
         products = new ArrayList<>();
     }
 
-    public void addProduct(Product product){
+    public void addProduct(Product product) {
         products.add(product);
+        totalPrice += product.getPrice();
     }
 
-    public boolean checkProductOnList(int code){
-        for (Product product:products) {
-            if (product.getCode()==code){
+    public boolean checkProductOnList(int code) {
+        for (Product product : products) {
+            if (product.getCode() == code) {
                 return true;
             }
         }

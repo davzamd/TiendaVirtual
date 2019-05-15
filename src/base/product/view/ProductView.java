@@ -2,6 +2,7 @@ package base.product.view;
 
 import base.product.control.ProductManager;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ProductView {
@@ -20,19 +21,26 @@ public class ProductView {
     }
 
     public static void selectProduct() {
-        boolean selected;
+        System.out.println("\n");
+        boolean selected = false;
         do {
-            System.out.println("Witch product do you want to change? please enter the code");
-            int code = scanner.nextInt();
-            scanner.nextLine();
-            selected = productManager.selectProduct(code);
-            if (!selected) {
-                System.out.println("Product doesnt exist");
+            try {
+                System.out.println("Que producto desea cambiar? por favor ingrese el codigo");
+                int code = scanner.nextInt();
+                scanner.nextLine();
+                selected = productManager.selectProduct(code);
+                if (!selected) {
+                    System.out.println("El producto no existe");
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Codigo invalido, solo se aceptan numeros");
+                scanner.next();
             }
         } while (!selected);
     }
 
     public static void printModifyMenu() {
+        System.out.println("\n");
         System.out.println("1. Modificar nombre de producto");
         System.out.println("2. Modificar precio de producto");
         System.out.println("3. Modificar código de producto");
@@ -40,9 +48,9 @@ public class ProductView {
 
     public static void modifyName() {
         boolean changed;
-        System.out.println("Modifying " + productManager.getProductName() + " name's");
+        System.out.println("Modificando el nombre del producto " + productManager.getProductName());
         do {
-            System.out.println("Please enter the name");
+            System.out.println("Por varo ingrese el nuevo nombre");
             String name = scanner.nextLine();
 
             changed = productManager.changeProductName(name);
@@ -50,24 +58,36 @@ public class ProductView {
     }
 
     public static void modifyPrice() {
-        boolean changed;
-        System.out.println("Modifying " + productManager.getProductName() + " price");
+        System.out.println("\n");
+        boolean changed = false;
+        System.out.println("Modificando el precio del producto: " + productManager.getProductName());
         do {
-            System.out.println("Please enter the new price");
-            double price = scanner.nextDouble();
+            try {
+                System.out.println("Por favor ingrese el nuevo precio");
+                double price = scanner.nextDouble();
 
-            changed = productManager.changeProductPrice(price);
+                changed = productManager.changeProductPrice(price);
+            } catch (InputMismatchException e) {
+                System.out.println("Codigo invalido, solo acepta numeros");
+                scanner.next();
+            }
         } while (!changed);
     }
 
     public static void modifyCode() {
-        boolean changed;
-        System.out.println("Modifying " + productManager.getProductName() + " code's");
+        System.out.println("\n");
+        boolean changed = false;
+        System.out.println("Modificando el codigo del producto " + productManager.getProductName());
         do {
-            System.out.println("Please enter the code");
-            int code = scanner.nextInt();
+            try {
+                System.out.println("Por favor ingrese el nuevo codigo");
+                int code = scanner.nextInt();
 
-            changed = productManager.changeProductCode(code);
+                changed = productManager.changeProductCode(code);
+            } catch (InputMismatchException e) {
+                System.out.println("Codigo invalido, solo acepta numeros");
+                scanner.next();
+            }
         } while (!changed);
     }
 
