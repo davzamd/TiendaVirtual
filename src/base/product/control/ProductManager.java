@@ -2,10 +2,15 @@ package base.product.control;
 
 import base.product.domain.Product;
 import base.product.view.ProductView;
+import base.util.InputData;
 
 import java.util.List;
 
 public class ProductManager {
+
+    private static final int MIN_OPTION = 1;
+    private static final int MAX_OPTION = 3;
+
 
     private static final ProductManager instance;
 
@@ -24,7 +29,15 @@ public class ProductManager {
         return instance;
     }
 
-    public static void actionByOption(int option) {
+    public static void modifyProducts() {
+        ProductView.printProducts();
+        ProductView.selectProduct();
+        ProductView.printModifyMenu();
+        int option = InputData.getOption(MIN_OPTION, MAX_OPTION);
+        actionByOption(option);
+    }
+
+    private static void actionByOption(int option) {
         switch (option) {
             case 1:
                 System.out.println("Option 1 selected");

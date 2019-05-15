@@ -42,4 +42,8 @@ public class EmployeeManager {
         System.out.println(success ? "Password modified successfully" : "Password didnt modify");
     }
 
+    public static String getEmployeeName(){
+        return employee.getFirstName();
+    }
+
 }

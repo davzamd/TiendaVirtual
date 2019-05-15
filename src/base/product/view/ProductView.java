@@ -6,9 +6,6 @@ import java.util.Scanner;
 
 public class ProductView {
 
-    private static final int MIN_OPTION = 1;
-    private static final int MAX_OPTION = 3;
-
     private static Scanner scanner;
     private static ProductManager productManager;
 
@@ -17,19 +14,12 @@ public class ProductView {
         productManager = ProductManager.getInstance();
     }
 
-    public static void modifyProducts() {
-        printProducts();
-        selectProduct();
-        printModifyMenu();
-        int option = getOption();
-        ProductManager.actionByOption(option);
-    }
 
-    private static void printProducts() {
+    public static void printProducts() {
         productManager.getProducts().forEach(System.out::println);
     }
 
-    private static void selectProduct() {
+    public static void selectProduct() {
         boolean selected;
         do {
             System.out.println("Witch product do you want to change? please enter the code");
@@ -42,26 +32,11 @@ public class ProductView {
         } while (!selected);
     }
 
-    private static int getOption() {
-        boolean goodOption;
-        int option;
-        do {
-            option = scanner.nextInt();
-            goodOption = option < MIN_OPTION || option > MAX_OPTION;
-            if(!goodOption){
-                System.out.println("Invalid Option");
-            }
-        } while (!goodOption);
-        scanner.nextLine();
-        return option;
-    }
-
-    private static void printModifyMenu() {
-        System.out.println("\n1. Modificar nombre de producto");
+    public static void printModifyMenu() {
+        System.out.println("1. Modificar nombre de producto");
         System.out.println("2. Modificar precio de producto");
-        System.out.println("3. Modificar código de producto\n");
+        System.out.println("3. Modificar código de producto");
     }
-
 
     public static void modifyName() {
         boolean changed;

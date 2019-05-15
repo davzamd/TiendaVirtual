@@ -1,11 +1,11 @@
 package base;
 
-import base.store.view.OnlineStore;
+import base.store.control.StoreManager;
 
 public class Main {
 
     public static void main(String[] args) {
-        OnlineStore onlineStore = new OnlineStore();
+        StoreManager onlineStore = new StoreManager();
         onlineStore.start();
     }
 }

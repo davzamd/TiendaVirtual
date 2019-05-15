@@ -3,6 +3,7 @@ package base.employee.view;
 import base.employee.control.EmployeeManager;
 import base.employee.exception.EmployeeException;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class EmployeeView {
@@ -28,6 +29,9 @@ public class EmployeeView {
                 loggedIn = employeeManager.login(code, password);
             } catch (EmployeeException e) {
                 System.out.println(e.getMessage());
+            }catch (InputMismatchException e){
+                System.out.println("Invalid code, only number allowed");
+                scanner.next();
             }
         }
     }

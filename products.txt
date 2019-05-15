@@ -24,4 +24,4 @@ Lenovo Ideapad 530S
 [descripcion]
 Ordenador portátil con Intel Core i5, 8GB RAM, 256GB SSD
 [precio]
-599.00
+600.00
