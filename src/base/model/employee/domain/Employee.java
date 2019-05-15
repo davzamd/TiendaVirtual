@@ -46,7 +46,6 @@ public class Employee {
         this.password = password;
     }
 
-
     @Override
     public String toString() {
         return String.format("%d %s %s %s", code, firstName, lastName, password);

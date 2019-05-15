@@ -35,6 +35,7 @@ public class OnlineStore {
         switch (option) {
             case 1:
                 System.out.println("Option 1 selected");
+
                 break;
             case 2:
                 System.out.println("Option 2 selected");

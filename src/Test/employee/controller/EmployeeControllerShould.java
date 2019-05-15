@@ -24,7 +24,7 @@ public class EmployeeControllerShould {
         assertNotNull(employee);
     }
 
-    @Test
+    @Test(expected = EmployeeException.class)
     public void return_employee_when_code_and_password_matches() {
         int code = 111;
         String password = "1234";
