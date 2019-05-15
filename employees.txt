@@ -6,7 +6,7 @@ Mario
 [apellidos]
 Blue
 [contraseña]
-123
+1234
 [empleado]
 [code]
 112

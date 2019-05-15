@@ -1,7 +1,7 @@
 package Test.product.controller;
 
-import base.controller.product.ProductController;
-import base.model.product.domain.Product;
+import base.product.control.ProductController;
+import base.product.domain.Product;
 import org.junit.Before;
 import org.junit.Test;
 

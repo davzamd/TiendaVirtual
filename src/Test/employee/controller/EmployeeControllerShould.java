@@ -1,9 +1,8 @@
 package Test.employee.controller;
 
-import base.controller.employee.EmployeeController;
-import base.model.employee.domain.Employee;
-import base.model.employee.exception.EmployeeException;
-import base.model.employee.persistance.EmployeeDAOImp;
+import base.employee.control.EmployeeController;
+import base.employee.domain.Employee;
+import base.employee.exception.EmployeeException;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,7 +23,7 @@ public class EmployeeControllerShould {
         assertNotNull(employee);
     }
 
-    @Test(expected = EmployeeException.class)
+    @Test()
     public void return_employee_when_code_and_password_matches() {
         int code = 111;
         String password = "1234";

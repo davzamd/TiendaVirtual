@@ -1,7 +1,7 @@
 package Test.product.persistance;
 
-import base.model.product.domain.Product;
-import base.model.product.persistance.ProductDAOImp;
+import base.product.domain.Product;
+import base.product.persistance.ProductDAOImp;
 import org.junit.Before;
 import org.junit.Test;
 

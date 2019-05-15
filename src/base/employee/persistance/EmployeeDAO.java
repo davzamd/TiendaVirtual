@@ -1,0 +1,17 @@
+package base.employee.persistance;
+
+import base.employee.domain.Employee;
+
+import java.util.List;
+
+public interface EmployeeDAO {
+
+    List<Employee> readEmployees();
+
+    Employee getEmployeeByCode(int code);
+
+    boolean updateEmployees();
+
+    boolean updateEmployees(List<Employee> employees);
+
+}

@@ -1,6 +1,6 @@
 package base;
 
-import base.View.OnlineStore;
+import base.store.view.OnlineStore;
 
 public class Main {
 

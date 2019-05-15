@@ -1,11 +1,10 @@
 package Test.employee.persistance;
 
-import base.model.employee.domain.Employee;
-import base.model.employee.exception.EmployeeException;
-import base.model.employee.persistance.EmployeeDAOImp;
+import base.employee.domain.Employee;
+import base.employee.exception.EmployeeException;
+import base.employee.persistance.EmployeeDAOImp;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 import java.util.List;
 
