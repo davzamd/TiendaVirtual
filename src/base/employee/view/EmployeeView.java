@@ -1,11 +1,7 @@
 package base.employee.view;
 
 import base.employee.control.EmployeeManager;
-import base.employee.exception.EmployeeException;
 import base.util.InputData;
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 public class EmployeeView {
 

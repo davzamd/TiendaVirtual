@@ -2,7 +2,9 @@ package base.product.control;
 
 import base.product.domain.Product;
 import base.product.view.ProductView;
+import base.util.Color;
 import base.util.InputData;
+import base.util.OutputData;
 
 import java.util.List;
 
@@ -45,7 +47,7 @@ public class ProductManager {
                 ProductView.selectProduct();
                 selected = true;
             } catch (IllegalArgumentException e) {
-                System.out.println("El producto no existe");
+                OutputData.printError("El producto no existe");
             }
         } while (!selected);
     }
@@ -83,7 +85,7 @@ public class ProductManager {
                 ProductView.modifyName();
                 selected = true;
             } catch (IllegalArgumentException e) {
-                System.out.println("Ya existe un producto el nombre indicado");
+                OutputData.printError("Ya existe un producto el nombre indicado");
                 selected = false;
             }
         } while (!selected);
@@ -92,7 +94,8 @@ public class ProductManager {
     public void changeProductName(String name) {
         if (!productController.checkExistingName(name)) {
             productSelected.setName(name);
-            System.out.println("El nombre a cambiado a " + name);
+            OutputData.printSuccess("El nombre a cambiado a " + name);
+            return;
         }
         throw new IllegalArgumentException();
     }
@@ -113,10 +116,10 @@ public class ProductManager {
         if (price > 0) {
             productSelected.setPrice(price);
             System.out.println();
-            System.out.println("El precio ha cambiado a " + price);
+            OutputData.printSuccess("El precio ha cambiado a " + price);
             return;
         }
-        System.out.println("El precio no puede ser negativo");
+        OutputData.printError("El precio no puede ser negativo");
         throw new IllegalArgumentException();
     }
 
@@ -135,10 +138,10 @@ public class ProductManager {
     public void changeProductCode(int code) {
         if (!productController.checkExistingCode(code)) {
             productSelected.setCode(code);
-            System.out.println("El codigo ha cambiado a " + code);
+            OutputData.printSuccess("El codigo ha cambiado a " + code);
             return;
         }
-        System.out.println("Ya existe un producto con es codigo " + code);
+        OutputData.printError("Ya existe un producto con es codigo " + code);
         throw new IllegalArgumentException();
     }
 

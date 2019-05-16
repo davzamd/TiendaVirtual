@@ -7,7 +7,9 @@ import base.product.domain.Product;
 import base.product.view.ProductView;
 import base.store.domain.Order;
 import base.store.view.OrderView;
+import base.util.Color;
 import base.util.InputData;
+import base.util.OutputData;
 
 public class OrderManager {
 
@@ -75,13 +77,13 @@ public class OrderManager {
             ProductView.printProducts();
             OrderView.addProduct();
         } else {
-            System.out.println("No puede añadir mas productos");
+            OutputData.printError("No puede añadir mas productos");
         }
     }
 
     public void addProduct(int code) {
         if (order.checkProductOnList(code)) {
-            System.out.println("Producto ya existe en la lista");
+            OutputData.printError("Producto ya existe en la lista");
             return;
         }
         ProductController productController = new ProductController();
@@ -89,9 +91,9 @@ public class OrderManager {
         Product product = productController.getProductByCode(code);
         if (product != null) {
             order.addProduct(product);
-            System.out.println("Producto anadido exitosamente");
+            OutputData.printSuccess("Producto anadido exitosamente");
         } else {
-            System.out.println("Producto no existe");
+            OutputData.printError("Producto no existe");
         }
     }
 

@@ -3,6 +3,7 @@ package base.store.view;
 import base.product.domain.Product;
 import base.store.control.OrderManager;
 import base.store.domain.Order;
+import base.util.Color;
 import base.util.InputData;
 import java.util.List;
 
@@ -14,14 +15,17 @@ public class OrderView {
     }
 
     public static void printOrderMenu() {
+        System.out.println(Color.MENU);
         System.out.println("\n1. Añadir producto a la cesta");
         System.out.println("2. Visualizar precio total de la cesta");
         System.out.println("3. Imprimir factura");
         System.out.println("4. Terminar pedido");
+        System.out.println(Color.DEFAULT);
     }
 
     public static void printOrderBill(Order order) {
         List<Product> products = order.getProducts();
+        System.out.print(Color.BILL);
         System.out.println("\n\tFactura Simplificada: ");
         System.out.println("------------------------------------------------------------------------------------");
         for (Product product : products) {
@@ -33,6 +37,7 @@ public class OrderView {
         System.out.println("------------------------------------------------------------------------------------");
         System.out.printf("\t%s %.2f%n","El precio total a pagar es",order.getTotalPrice());
         System.out.printf("\t%s %s%n%n","Atendido por:",order.getEmployeeName());
+        System.out.print(Color.DEFAULT);
     }
 
     public static void addProduct() {

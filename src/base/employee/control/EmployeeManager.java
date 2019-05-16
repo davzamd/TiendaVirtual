@@ -3,8 +3,7 @@ package base.employee.control;
 import base.employee.domain.Employee;
 import base.employee.exception.EmployeeException;
 import base.employee.view.EmployeeView;
-
-import java.util.InputMismatchException;
+import base.util.Color;
 
 public class EmployeeManager {
 
@@ -25,19 +24,22 @@ public class EmployeeManager {
     }
 
     public void login() {
-        do {
+        while (!isLogged()) {
             try {
                 EmployeeView.login();
             } catch (EmployeeException e) {
+                System.out.print(Color.ERROR);
                 System.out.println(e.getMessage());
+                System.out.print(Color.DEFAULT);
             }
-        } while (!isLogged());
+        }
     }
 
     public void login(int code, String password) {
         employee = employeeController.authenticateEmployee(code, password);
         if (employee != null) {
-            System.out.printf("%n%s %s!%n", "Bienvenido", employee.getFirstName());
+            System.out.printf("%n%s%s %s%s!%n",
+                    Color.SUCCESS, "Bienvenido", Color.DEFAULT, employee.getFirstName());
             return;
         }
         throw new IllegalArgumentException();
@@ -57,7 +59,10 @@ public class EmployeeManager {
             employee.setPassword(passwordOne);
             success = employeeController.updateEmployees();
         }
-        System.out.println(success ? "Password modified successfully!" : "Password didnt modify");
+        System.out.println(success ?
+                Color.SUCCESS + "Password modified successfully!"
+                : Color.ERROR + "Password didnt modify");
+        System.out.print(Color.DEFAULT);
     }
 
     public String getEmployeeName() {

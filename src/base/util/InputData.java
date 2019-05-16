@@ -19,10 +19,10 @@ public class InputData {
                 option = scanner.nextInt();
                 goodOption = option >= minOption && option <= maxOption;
                 if (!goodOption) {
-                    System.out.println("Opcion invalida");
+                    OutputData.printError("Opcion invalida");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Codigo invalido, solo acepta numeros");
+                OutputData.printError("Codigo invalido, solo acepta numeros");
                 scanner.next();
             }
         } while (!goodOption);
@@ -49,7 +49,7 @@ public class InputData {
                 scanner.nextLine();
                 goodResponse = true;
             } catch (InputMismatchException e) {
-                System.out.println("Datos invalidos, solo se aceptan numeros");
+                OutputData.printError("Datos invalidos, solo se aceptan numeros");
                 scanner.next();
             }
         } while (!goodResponse);
@@ -65,7 +65,7 @@ public class InputData {
                 scanner.nextLine();
                 goodResponse = true;
             } catch (InputMismatchException e) {
-                System.out.println("Datos invalidos, solo se aceptan numeros");
+                OutputData.printError("Datos invalidos, solo se aceptan numeros");
                 scanner.next();
             }
         } while (!goodResponse);

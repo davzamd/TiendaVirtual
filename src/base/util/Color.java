@@ -3,7 +3,9 @@ package base.util;
 public enum Color {
     ERROR("\u001B[31m"),
     SUCCESS("\u001B[32m"),
-    DEFAULT("\u001B[37m");
+    DEFAULT("\u001B[0m"),
+    MENU("\u001B[33m"),
+    BILL("\u001B[36m");
 
     private String colorCode;
 
