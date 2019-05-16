@@ -29,4 +29,36 @@ public class InputData {
         scanner.nextLine();
         return option;
     }
+
+    public static int inputInt() {
+        boolean goodResponse = false;
+        int response = 0;
+        do {
+            try {
+                response = scanner.nextInt();
+                scanner.nextLine();
+                goodResponse = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Datos invalidos, solo se aceptan numeros");
+                scanner.next();
+            }
+        } while (!goodResponse);
+        return response;
+    }
+
+    public static double inputDouble() {
+        boolean goodResponse = false;
+        double response = 0;
+        do {
+            try {
+                response = scanner.nextDouble();
+                scanner.nextLine();
+                goodResponse = true;
+            } catch (InputMismatchException e) {
+                System.out.println("Datos invalidos, solo se aceptan numeros");
+                scanner.next();
+            }
+        } while (!goodResponse);
+        return response;
+    }
 }
