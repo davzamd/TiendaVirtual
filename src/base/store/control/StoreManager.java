@@ -13,9 +13,9 @@ public class StoreManager {
     public static final int MAX_OPTION = 4;
 
     public void start() {
-        StoreView.bienvenido();
+        StoreView.welcome();
         while (true) {
-            EmployeeView.login();
+            EmployeeManager.getInstance().login();
             StoreView.printMainMenu();
             int option = InputData.getOption(MIN_OPTION, MAX_OPTION);
             actionByOption(option);

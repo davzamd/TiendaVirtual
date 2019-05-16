@@ -4,6 +4,7 @@ import base.employee.control.EmployeeManager;
 import base.product.control.ProductController;
 import base.product.control.ProductManager;
 import base.product.domain.Product;
+import base.product.view.ProductView;
 import base.store.domain.Order;
 import base.store.view.OrderView;
 import base.util.InputData;
@@ -16,7 +17,6 @@ public class OrderManager {
     private static final int MAX_OPTION = 4;
 
     private int quantity;
-    private int maxOption;
 
     private static Order order;
     private boolean orderFinished;
@@ -35,7 +35,7 @@ public class OrderManager {
 
     public void makeAnOrder() {
         order = new Order(EmployeeManager.getInstance().getEmployeeName());
-        maxOption = ProductManager.getInstance().getProducts().size();
+        int maxOption = ProductManager.getInstance().getProducts().size();
 
         OrderView.askForProductsQuantity();
         quantity = InputData.getOption(1, maxOption);
@@ -50,14 +50,7 @@ public class OrderManager {
     private void actionByOption(int option) {
         switch (option) {
             case 1:
-                int currentOrderSize = order.getProducts().size();
-                System.out.println(currentOrderSize);
-                if (currentOrderSize < quantity) {
-                    System.out.println("Opcion 1 seleccionada");
-                    OrderView.addProduct();
-                } else {
-                    System.out.println("No puede añadir mas productos");
-                }
+                addProduct();
                 break;
             case 2:
                 System.out.println("Opcion 2 seleccionada");
@@ -71,6 +64,18 @@ public class OrderManager {
                 System.out.println("Opcion 4 seleccionada");
                 orderFinished = true;
                 break;
+        }
+    }
+
+    private void addProduct() {
+        int currentOrderSize = order.getProducts().size();
+
+        if (currentOrderSize < quantity) {
+            System.out.println("Opcion 1 seleccionada");
+            ProductView.printProducts();
+            OrderView.addProduct();
+        } else {
+            System.out.println("No puede añadir mas productos");
         }
     }
 

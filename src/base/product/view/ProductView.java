@@ -9,11 +9,9 @@ import java.util.Scanner;
 
 public class ProductView {
 
-    private static Scanner scanner;
     private static ProductManager productManager;
 
     static {
-        scanner = new Scanner(System.in);
         productManager = ProductManager.getInstance();
     }
 
@@ -37,6 +35,7 @@ public class ProductView {
     }
 
     public static void modifyName() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Modificando el nombre del producto " + productManager.getProductName());
         System.out.println("Por varo ingrese el nuevo nombre");
 
@@ -64,7 +63,6 @@ public class ProductView {
 
         productManager.changeProductCode(code);
     }
-    
 
 
 }

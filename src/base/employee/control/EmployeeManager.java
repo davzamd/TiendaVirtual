@@ -1,6 +1,10 @@
 package base.employee.control;
 
 import base.employee.domain.Employee;
+import base.employee.exception.EmployeeException;
+import base.employee.view.EmployeeView;
+
+import java.util.InputMismatchException;
 
 public class EmployeeManager {
 
@@ -20,17 +24,27 @@ public class EmployeeManager {
         return instance;
     }
 
-    public boolean isLogged() {
-        return employee != null;
+    public void login() {
+        do {
+            try {
+                EmployeeView.login();
+            } catch (EmployeeException e) {
+                System.out.println(e.getMessage());
+            }
+        } while (!isLogged());
     }
 
-    public boolean login(int code, String password) {
+    public void login(int code, String password) {
         employee = employeeController.authenticateEmployee(code, password);
         if (employee != null) {
-            System.out.printf("%n%s %s!", "Bienvenido", employee.getFirstName());
-            return true;
+            System.out.printf("%n%s %s!%n", "Bienvenido", employee.getFirstName());
+            return;
         }
-        return false;
+        throw new IllegalArgumentException();
+    }
+
+    public boolean isLogged() {
+        return employee != null;
     }
 
     public void logout() {

@@ -30,6 +30,16 @@ public class InputData {
         return option;
     }
 
+    public static String inputString() {
+        boolean goodResponse;
+        String response;
+        do {
+            response = scanner.next();
+            goodResponse = !response.isEmpty();
+        } while (!goodResponse);
+        return response;
+    }
+
     public static int inputInt() {
         boolean goodResponse = false;
         int response = 0;
