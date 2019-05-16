@@ -4,6 +4,7 @@ import base.employee.domain.Employee;
 import base.employee.exception.EmployeeException;
 import base.employee.view.EmployeeView;
 import base.util.Color;
+import base.util.OutputData;
 
 public class EmployeeManager {
 
@@ -28,9 +29,7 @@ public class EmployeeManager {
             try {
                 EmployeeView.login();
             } catch (EmployeeException e) {
-                System.out.print(Color.ERROR);
-                System.out.println(e.getMessage());
-                System.out.print(Color.DEFAULT);
+                OutputData.printError(e.getMessage());
             }
         }
     }
@@ -40,9 +39,7 @@ public class EmployeeManager {
         if (employee != null) {
             System.out.printf("%n%s%s %s%s!%n",
                     Color.SUCCESS, "Bienvenido", Color.DEFAULT, employee.getFirstName());
-            return;
         }
-        throw new IllegalArgumentException();
     }
 
     public boolean isLogged() {
