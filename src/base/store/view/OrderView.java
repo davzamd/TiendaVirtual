@@ -4,6 +4,8 @@ import base.product.domain.Product;
 import base.product.view.ProductView;
 import base.store.control.OrderManager;
 import base.store.domain.Order;
+import base.util.Color;
+import base.util.InputData;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -16,17 +18,18 @@ public class OrderView {
     }
 
     public static void printOrderMenu() {
-        System.out.println("\n");
-        System.out.println("1. Añadir producto a la cesta");
+        System.out.println(Color.MENU);
+        System.out.println("\n1. Añadir producto a la cesta");
         System.out.println("2. Visualizar precio total de la cesta");
         System.out.println("3. Imprimir factura");
         System.out.println("4. Terminar pedido");
+        System.out.println(Color.DEFAULT);
     }
 
     public static void printOrderBill(Order order) {
         List<Product> products = order.getProducts();
-        System.out.println("\n");
-        System.out.println("\tFactura Simplificada: ");
+        System.out.println(Color.BILL);
+        System.out.println("\n\tFactura Simplificada: ");
         System.out.println("------------------------------------------------------------------------------------");
         for (Product product : products) {
             System.out.printf("%s \t\t\t\t%d%n", "Codigo:", product.getCode());
@@ -37,20 +40,14 @@ public class OrderView {
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println("\tEl precio total a pagar es " + order.getTotalPrice());
         System.out.println("\tAtendido por: " + order.getEmployeeName());
+        System.out.println(Color.DEFAULT);
     }
 
     public static void addProduct() {
-        System.out.println("\n");
         ProductView.printProducts();
-        Scanner scanner = new Scanner(System.in);
-        try {
-            System.out.println("Por favor ingrese el codigo del producto");
-            int code = scanner.nextInt();
-            OrderManager.getInstance().addProduct(code);
-        }catch (InputMismatchException e){
-            System.out.println("Producto incorrecto");
-        }catch (IllegalArgumentException e){
-            System.out.println("Producto ya en lista");
-        }
+
+        System.out.println("\nPor favor ingrese el codigo del producto");
+        int code = InputData.inputInt();
+        OrderManager.getInstance().addProduct(code);
     }
 }

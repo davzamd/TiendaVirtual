@@ -3,6 +3,7 @@ package base.product.control;
 import base.product.domain.Product;
 import base.product.view.ProductView;
 import base.util.InputData;
+import base.util.OutputData;
 
 import java.util.List;
 
@@ -10,7 +11,9 @@ public class ProductManager {
 
     private static final int MIN_OPTION = 1;
     private static final int MAX_OPTION = 3;
-
+    private static final int MODIFY_NAME = 1;
+    private static final int MODIFY_PRICE = 2;
+    private static final int MODIFY_CODE = 3;
 
     private static final ProductManager instance;
 
@@ -39,15 +42,15 @@ public class ProductManager {
 
     private void actionByOption(int option) {
         switch (option) {
-            case 1:
+            case MODIFY_NAME:
                 System.out.println("Opcion 1 seleccionada");
                 ProductView.modifyName();
                 break;
-            case 2:
+            case MODIFY_PRICE:
                 System.out.println("Opcion 2 seleccionada");
                 ProductView.modifyPrice();
                 break;
-            case 3:
+            case MODIFY_CODE:
                 System.out.println("Opcion 3 seleccionada");
                 ProductView.modifyCode();
                 break;
@@ -61,7 +64,7 @@ public class ProductManager {
             System.out.println("El nombre a cambiado a " + name);
             return true;
         }
-        System.out.println("Ya existe un producto con el nombre " + name);
+        OutputData.printError("Ya existe un producto con el nombre " + name);
         return false;
     }
 
@@ -72,7 +75,7 @@ public class ProductManager {
             System.out.println("El precio ha cambiado a " + price);
             return true;
         }
-        System.out.println("El precio no puede ser negativo");
+        OutputData.printError("El precio no puede ser negativo");
         return false;
     }
 
@@ -82,7 +85,7 @@ public class ProductManager {
             System.out.println("El codigo ha cambiado a " + code);
             return true;
         }
-        System.out.println("Ya existe un producto con es codigo " + code);
+        OutputData.printError("Ya existe un producto con es codigo " + code);
         return false;
     }
 

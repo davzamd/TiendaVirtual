@@ -8,12 +8,17 @@ import base.util.InputData;
 
 public class StoreManager {
 
+    private static final int MAKE_ORDER = 1;
+    private static final int MODIFY_PRODUCT = 2;
+    private static final int MODIFY_PASSWORD = 3;
+    private static final int LOGOUT = 4;
 
-    public static final int MIN_OPTION = 1;
-    public static final int MAX_OPTION = 4;
+
+    private static final int MIN_OPTION = 1;
+    private static final int MAX_OPTION = 4;
 
     public void start() {
-        StoreView.bienvenido();
+        StoreView.welcome();
         while (true) {
             EmployeeView.login();
             StoreView.printMainMenu();
@@ -24,23 +29,22 @@ public class StoreManager {
 
     private void actionByOption(int option) {
         switch (option) {
-            case 1:
+            case MAKE_ORDER:
                 System.out.println("Opcion 1 seleccionada");
                 OrderManager.getInstance().makeAnOrder();
                 break;
-            case 2:
+            case MODIFY_PRODUCT:
                 System.out.println("Opcion 2 seleccionada");
                 ProductManager.getInstance().modifyProducts();
                 break;
-            case 3:
+            case MODIFY_PASSWORD:
                 System.out.println("Opcion 3 seleccionada");
                 EmployeeView.changePassword();
                 break;
-            case 4:
+            case LOGOUT:
                 System.out.println("Opcion 4 seleccionada");
                 EmployeeManager.getInstance().logout();
                 break;
         }
     }
-
 }

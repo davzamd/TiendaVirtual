@@ -29,6 +29,7 @@ public class InputData {
         return option;
     }
 
+
     public static String inputString() {
         boolean goodResponse;
         String response;

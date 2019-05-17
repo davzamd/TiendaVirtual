@@ -15,7 +15,7 @@ Kingston A400 SSD 240GB
 [descripcion]
 Disco duro A400 de estado sólido de Kingston
 [precio]
-32.95
+33.00
 [empleado]
 [code]
 224

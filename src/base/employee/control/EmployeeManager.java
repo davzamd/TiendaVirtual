@@ -1,6 +1,7 @@
 package base.employee.control;
 
 import base.employee.domain.Employee;
+import base.util.Color;
 
 public class EmployeeManager {
 
@@ -43,7 +44,10 @@ public class EmployeeManager {
             employee.setPassword(passwordOne);
             success = employeeController.updateEmployees();
         }
-        System.out.println(success ? "Password modified successfully!" : "Password didnt modify");
+        System.out.println(success ?
+                Color.SUCCESS + "Password modified successfully!"
+                : Color.ERROR + "Password didnt modify");
+        System.out.print(Color.DEFAULT);
     }
 
     public String getEmployeeName() {
