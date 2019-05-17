@@ -2,6 +2,7 @@ package base.store.control;
 
 import base.employee.control.EmployeeManager;
 import base.employee.view.EmployeeView;
+import base.order.control.OrderManager;
 import base.product.control.ProductManager;
 import base.store.view.StoreView;
 import base.util.InputData;

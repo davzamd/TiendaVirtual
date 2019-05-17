@@ -9,6 +9,10 @@ public class OutputData {
         printWithFormat(Color.ERROR, output);
     }
 
+    public static void printBill(String bill){
+        printWithFormat(Color.BILL,bill);
+    }
+
     private static void printWithFormat(Color color, String output) {
         System.out.print(color);
         System.out.println(output);

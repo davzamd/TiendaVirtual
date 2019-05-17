@@ -1,11 +1,12 @@
-package base.store.control;
+package base.order.control;
 
 import base.employee.control.EmployeeManager;
+import base.order.persistance.OrderDAOImp;
 import base.product.control.ProductController;
 import base.product.control.ProductManager;
 import base.product.domain.Product;
-import base.store.domain.Order;
-import base.store.view.OrderView;
+import base.order.domain.Order;
+import base.order.view.OrderView;
 import base.util.InputData;
 import base.util.OutputData;
 
@@ -20,12 +21,14 @@ public class OrderManager {
     private static final int SHOW_BILL = 3;
     private static final int FINISH_ORDER = 4;
 
-    private static Order order;
+    private Order order;
+    private OrderDAOImp orderDAOImp;
 
     private boolean orderFinished;
     private int quantity;
 
     private OrderManager() {
+        orderDAOImp = new OrderDAOImp();
     }
 
     static {
@@ -63,11 +66,16 @@ public class OrderManager {
                 break;
             case SHOW_CURRENT_ORDER_PRICE:
                 System.out.println("Opcion 2 seleccionada");
-                System.out.println("\nPrecio actual del pedido: " + order.getTotalPrice());
+                System.out.println("\nPrecio actual del pedido: " + order.getTotalPrice() + "\u20AC");
                 break;
             case SHOW_BILL:
-                System.out.println("Opcion 3 seleccionada");
-                OrderView.printOrderBill(order);
+                if (!order.getProducts().isEmpty()) {
+                    System.out.println("Opcion 3 seleccionada");
+                    OrderView.printOrderBill(order);
+                    orderDAOImp.UpdateOrder(order);
+                }else {
+                    System.out.println("No ha agregado productos al pedido");
+                }
                 break;
             case FINISH_ORDER:
                 System.out.println("Opcion 4 seleccionada");
