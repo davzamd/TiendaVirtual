@@ -4,7 +4,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class InputData {
-
     private static Scanner scanner;
 
     static {
@@ -19,14 +18,56 @@ public class InputData {
                 option = scanner.nextInt();
                 goodOption = option >= minOption && option <= maxOption;
                 if (!goodOption) {
-                    System.out.println("Opcion invalida");
+                    OutputData.printError("Opcion invalida");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Codigo invalido, solo acepta numeros");
+                OutputData.printError("Codigo invalido, solo acepta numeros");
                 scanner.next();
             }
         } while (!goodOption);
         scanner.nextLine();
         return option;
+    }
+
+    public static String inputString() {
+        boolean goodResponse;
+        String response;
+        do {
+            response = scanner.next();
+            goodResponse = !response.isEmpty();
+        } while (!goodResponse);
+        return response;
+    }
+
+    public static int inputInt() {
+        boolean goodResponse = false;
+        int response = 0;
+        do {
+            try {
+                response = scanner.nextInt();
+                scanner.nextLine();
+                goodResponse = true;
+            } catch (InputMismatchException e) {
+                OutputData.printError("Datos invalidos, solo se aceptan numeros");
+                scanner.next();
+            }
+        } while (!goodResponse);
+        return response;
+    }
+
+    public static double inputDouble() {
+        boolean goodResponse = false;
+        double response = 0;
+        do {
+            try {
+                response = scanner.nextDouble();
+                scanner.nextLine();
+                goodResponse = true;
+            } catch (InputMismatchException e) {
+                OutputData.printError("Datos invalidos, solo se aceptan numeros");
+                scanner.next();
+            }
+        } while (!goodResponse);
+        return response;
     }
 }
