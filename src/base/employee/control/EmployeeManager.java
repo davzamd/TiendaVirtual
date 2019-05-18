@@ -41,8 +41,7 @@ public class EmployeeManager {
     public void changePassword(String passwordOne, String passwordTwo) {
         boolean success = false;
         if (passwordOne.equals(passwordTwo)) {
-            employee.setPassword(passwordOne);
-            success = employeeController.updateEmployees();
+            success = employeeController.updateEmployeePassword(employee.getCode(), passwordOne);
         }
         System.out.println(success ?
                 Color.SUCCESS + "Password modified successfully!"

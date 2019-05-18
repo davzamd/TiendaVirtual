@@ -62,6 +62,13 @@ public class EmployeeDAOImp implements EmployeeDAO {
     }
 
     @Override
+    public boolean updateEmployeePassword(int code, String newPassword) {
+        Employee employee = getEmployeeByCode(code);
+        employee.setPassword(newPassword);
+        return updateEmployees();
+    }
+
+    @Override
     public boolean updateEmployees() {
         return updateEmployees(this.employees);
     }

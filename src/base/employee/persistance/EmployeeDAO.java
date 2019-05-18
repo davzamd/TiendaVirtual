@@ -10,6 +10,8 @@ public interface EmployeeDAO {
 
     Employee getEmployeeByCode(int code);
 
+    boolean updateEmployeePassword(int code , String newPassword);
+
     boolean updateEmployees();
 
     boolean updateEmployees(List<Employee> employees);

@@ -28,6 +28,10 @@ public class EmployeeController {
         }
     }
 
+    public boolean updateEmployeePassword(int code , String newPassword){
+        return employeeDAOImp.updateEmployeePassword(code,newPassword);
+    }
+
     public boolean updateEmployees(){
         return employeeDAOImp.updateEmployees();
     }
