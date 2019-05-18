@@ -10,6 +10,12 @@ public interface ProductDAO {
 
     Product getProductByCode(int code);
 
+    boolean updateProductName(int code,String newName);
+
+    boolean updateProductCode(int code,int newCode);
+
+    boolean updateProductPrice(int code, double price);
+
     boolean updateProducts();
 
     boolean updateProducts(List<Product> products);

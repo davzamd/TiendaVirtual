@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc261f30-39f3-40a6-90f3-99e60bf52adc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/base/order/persistance/OrderDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/base/order/persistance/OrderDAOImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/control/OrderManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/control/StoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/control/StoreManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/domain/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/view/OrderView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/store/control/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/order/control/OrderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/store/control/StoreManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/store/control/StoreManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/store/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/order/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/store/view/OrderView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/order/view/OrderView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/util/OutputData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/util/OutputData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factura.txt" beforeDir="false" afterPath="$PROJECT_DIR$/factura.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.txt" beforeDir="false" afterPath="$PROJECT_DIR$/products.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/product/control/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/control/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/product/control/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/control/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/product/persistance/ProductDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/persistance/ProductDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/base/product/view/ProductView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/view/ProductView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,28 +27,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/order/view/OrderView.java">
+        <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="570">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#407#408#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/order/control/OrderManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,41 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employees.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/util/OutputData.java">
+        <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAOImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="33" />
-              <folding>
-                <element signature="e#97#98#0" expanded="true" />
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#255#256#0" expanded="true" />
-                <element signature="e#306#307#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="420">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,11 +55,68 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAOImp.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="552">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#saveProductsOnList#0;class#ProductDAOImp#0" />
+                <element signature="method#updateProducts#1;class#ProductDAOImp#0" />
+                <element signature="method#saveProductsOnFile#0;class#ProductDAOImp#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="691">
+              <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3114#3115#0" expanded="true" />
+                <element signature="e#3200#3201#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/product/view/ProductView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#502#503#0" expanded="true" />
+                <element signature="e#770#771#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/base/product/persistance/ProductDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,20 +127,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/order/domain/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="615">
               <caret line="45" column="84" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1127#1128#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="375">
               <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -183,8 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/base/old/CodigoError.java" />
-        <option value="$PROJECT_DIR$/src/base/old/ErrorCode.java" />
         <option value="$PROJECT_DIR$/src/base/model/employee/exception/ErrorCode.java" />
         <option value="$PROJECT_DIR$/src/base/model/employee/exception/EmployeeException.java" />
         <option value="$PROJECT_DIR$/src/base/View/TiendaVirtual.java" />
@@ -210,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/base2/employee/control/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/base2/product/control/ProductController.java" />
         <option value="$PROJECT_DIR$/src/Test/employee/controller/EmployeeControllerShould.java" />
-        <option value="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" />
         <option value="$PROJECT_DIR$/src/base/employee/control/EmployeeHandler.java" />
         <option value="$PROJECT_DIR$/src/base/product/control/ProductHandler.java" />
         <option value="$PROJECT_DIR$/src/base/store/view/OnlineStore.java" />
@@ -221,10 +214,8 @@
         <option value="$PROJECT_DIR$/src/base/util/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/base/store/control/StoreManager.java" />
         <option value="$PROJECT_DIR$/src/base/util/Color.java" />
-        <option value="$PROJECT_DIR$/src/base/product/control/ProductManager.java" />
         <option value="$PROJECT_DIR$/src/base/employee/control/EmployeeManager.java" />
         <option value="$PROJECT_DIR$/src/base/store/view/StoreView.java" />
-        <option value="$PROJECT_DIR$/src/base/product/view/ProductView.java" />
         <option value="$PROJECT_DIR$/src/base/employee/view/EmployeeView.java" />
         <option value="$PROJECT_DIR$/src/base/store/view/OrderView.java" />
         <option value="$PROJECT_DIR$/src/base/store/control/OrderManager.java" />
@@ -234,6 +225,11 @@
         <option value="$PROJECT_DIR$/src/base/util/OutputData.java" />
         <option value="$PROJECT_DIR$/src/base/order/view/OrderView.java" />
         <option value="$PROJECT_DIR$/src/base/order/domain/Order.java" />
+        <option value="$PROJECT_DIR$/src/base/product/persistance/ProductDAO.java" />
+        <option value="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" />
+        <option value="$PROJECT_DIR$/src/base/product/control/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/base/product/control/ProductManager.java" />
+        <option value="$PROJECT_DIR$/src/base/product/view/ProductView.java" />
       </list>
     </option>
   </component>
@@ -251,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -263,16 +258,6 @@
             <path>
               <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,28 +271,29 @@
               <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
               <item name="persistance" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -415,6 +401,7 @@
       <workItem from="1557827330861" duration="2584000" />
       <workItem from="1557842557790" duration="14141000" />
       <workItem from="1557904447414" duration="18447000" />
+      <workItem from="1558188324277" duration="1298000" />
     </task>
     <servers />
   </component>
@@ -451,7 +438,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54323000" />
+    <option name="totallyTimeSpent" value="55761000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -462,7 +449,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.50136983" side_tool="true" weight="0.25767368" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.27786753" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.2819063" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -493,7 +480,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.50136983" side_tool="true" weight="0.25767368" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.27786753" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.2819063" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -588,16 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/product/persistance/ProductDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/product/domain/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -636,19 +613,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/util/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="e#109#110#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/util/MainMenu.java" />
     <entry file="file://$PROJECT_DIR$/src/base/util/Color.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -662,55 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#saveProductsOnList#0;class#ProductDAOImp#0" />
-            <element signature="method#updateProducts#1;class#ProductDAOImp#0" />
-            <element signature="method#saveProductsOnFile#0;class#ProductDAOImp#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/store/view/StoreView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/product/view/ProductView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,9 +672,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/order/view/OrderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/order/control/OrderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employees.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/util/OutputData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#97#98#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/base/order/domain/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="45" column="84" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="375">
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -764,74 +749,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeManager.java">
+    <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAOImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/util/OutputData.java">
+    <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="435">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
           <folding>
-            <element signature="e#97#98#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-            <element signature="e#306#307#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/order/view/OrderView.java">
+    <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        <state relative-caret-position="691">
+          <caret line="62" column="48" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#3114#3115#0" expanded="true" />
+            <element signature="e#3200#3201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/order/domain/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/base/product/view/ProductView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="45" column="84" selection-start-line="45" selection-start-column="84" selection-end-line="45" selection-end-column="84" />
+        <state relative-caret-position="131">
+          <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employees.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/order/control/OrderManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="72" column="64" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -839,17 +798,23 @@
     <entry file="file://$PROJECT_DIR$/factura.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="552">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveProductsOnList#0;class#ProductDAOImp#0" />
+            <element signature="method#updateProducts#1;class#ProductDAOImp#0" />
+            <element signature="method#saveProductsOnFile#0;class#ProductDAOImp#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAOImp.java">
+    <entry file="file://$PROJECT_DIR$/src/base/product/persistance/ProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

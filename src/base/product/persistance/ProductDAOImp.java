@@ -91,6 +91,28 @@ public class ProductDAOImp implements ProductDAO {
         }
     }
 
+
+    @Override
+    public boolean updateProductName(int code, String newName) {
+        Product product = getProductByCode(code);
+        product.setName(newName);
+        return updateProducts();
+    }
+
+    @Override
+    public boolean updateProductCode(int code, int newCode) {
+        Product product = getProductByCode(code);
+        product.setCode(newCode);
+        return updateProducts();
+    }
+
+    @Override
+    public boolean updateProductPrice(int code, double newPrice) {
+        Product product = getProductByCode(code);
+        product.setPrice(newPrice);
+        return updateProducts();
+    }
+
     public boolean checkExistingName(String name) {
         for (Product product : products) {
             if (product.getName().toUpperCase().trim().equals(name.toUpperCase().trim())) {

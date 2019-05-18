@@ -43,7 +43,7 @@ public class ProductView {
     public static void modifyName() {
         Scanner scanner = new Scanner(System.in);
         boolean changed;
-        System.out.println("\nModificando el nombre del producto " + productManager.getProductName());
+        System.out.println("\nModificando el nombre del producto ");
         do {
             System.out.println("Por favor ingrese el nuevo nombre");
             String name = scanner.nextLine();
@@ -54,7 +54,7 @@ public class ProductView {
 
     public static void modifyPrice() {
         boolean changed;
-        System.out.println("\nModificando el precio del producto: " + productManager.getProductName());
+        System.out.println("\nModificando el precio del producto: ");
         do {
             System.out.println("Por favor ingrese el nuevo precio");
             double price = InputData.inputDouble();
@@ -65,7 +65,7 @@ public class ProductView {
 
     public static void modifyCode() {
         boolean changed;
-        System.out.println("\nModificando el codigo del producto " + productManager.getProductName());
+        System.out.println("\nModificando el codigo del producto ");
         do {
             System.out.println("Por favor ingrese el nuevo codigo");
             int code = InputData.inputInt();

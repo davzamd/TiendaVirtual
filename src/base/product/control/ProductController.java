@@ -24,6 +24,18 @@ public class ProductController {
         return productDAOImp.updateProducts();
     }
 
+    public boolean updateProductName(int code, String newName) {
+        return productDAOImp.updateProductName(code, newName);
+    }
+
+    public boolean updateProductCode(int code, int newCode) {
+        return productDAOImp.updateProductCode(code, newCode);
+    }
+
+    public boolean updateProductPrice(int code, double newPrice) {
+        return productDAOImp.updateProductPrice(code, newPrice);
+    }
+
     public boolean checkExistingName(String name) {
         return productDAOImp.checkExistingName(name);
     }

@@ -17,7 +17,7 @@ public class ProductManager {
 
     private static final ProductManager instance;
 
-    private static Product productSelected;
+    private static int productSelectedCode;
     private static ProductController productController;
 
     private ProductManager() {
@@ -60,7 +60,7 @@ public class ProductManager {
 
     public boolean changeProductName(String name) {
         if (!productController.checkExistingName(name)) {
-            productSelected.setName(name);
+            productController.updateProductName(productSelectedCode, name);
             System.out.println("El nombre a cambiado a " + name);
             return true;
         }
@@ -70,9 +70,8 @@ public class ProductManager {
 
     public boolean changeProductPrice(double price) {
         if (price > 0) {
-            productSelected.setPrice(price);
-            System.out.println();
-            System.out.println("El precio ha cambiado a " + price);
+            productController.updateProductPrice(productSelectedCode, price);
+            System.out.println("\nEl precio ha cambiado a " + price);
             return true;
         }
         OutputData.printError("El precio no puede ser negativo");
@@ -81,7 +80,7 @@ public class ProductManager {
 
     public boolean changeProductCode(int code) {
         if (!productController.checkExistingCode(code)) {
-            productSelected.setCode(code);
+            productController.updateProductCode(productSelectedCode, code);
             System.out.println("El codigo ha cambiado a " + code);
             return true;
         }
@@ -90,13 +89,13 @@ public class ProductManager {
     }
 
     public boolean selectProduct(int code) {
-        productSelected = productController.getProductByCode(code);
-        return productSelected != null;
+        if (productController.checkExistingCode(code)) {
+            productSelectedCode = code;
+            return true;
+        }
+        return false;
     }
 
-    public String getProductName() {
-        return productSelected.getName();
-    }
 
     public List<Product> getProducts() {
         return productController.getProducts();
