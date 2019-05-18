@@ -24,11 +24,15 @@ public class EmployeeController {
         if (authenticated) {
             return employee;
         } else {
-           throw new EmployeeException("Error - Invalid Password",ErrorCode.ERROR_INVALID_PASSWORD);
+            throw new EmployeeException("Error - Invalid Password", ErrorCode.ERROR_INVALID_PASSWORD);
         }
     }
 
-    public boolean updateEmployees(){
+    public boolean updateEmployeePassword(int code, String newPassword) {
+        return employeeDAOImp.updateEmployeePassword(code, newPassword);
+    }
+
+    public boolean updateEmployees() {
         return employeeDAOImp.updateEmployees();
     }
 
