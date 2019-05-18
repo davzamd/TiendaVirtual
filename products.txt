@@ -20,7 +20,7 @@ Disco duro A400 de estado sólido de Kingston
 [code]
 224
 [nombre]
-Lenovo Ideapad 530
+Lenovo Ideapad 530S
 [descripcion]
 Ordenador portátil con Intel Core i5, 8GB RAM, 256GB SSD
 [precio]

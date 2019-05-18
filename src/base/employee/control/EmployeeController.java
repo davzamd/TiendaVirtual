@@ -32,8 +32,4 @@ public class EmployeeController {
         return employeeDAOImp.updateEmployeePassword(code,newPassword);
     }
 
-    public boolean updateEmployees(){
-        return employeeDAOImp.updateEmployees();
-    }
-
 }

@@ -68,13 +68,7 @@ public class EmployeeDAOImp implements EmployeeDAO {
         return updateEmployees();
     }
 
-    @Override
-    public boolean updateEmployees() {
-        return updateEmployees(this.employees);
-    }
-
-    @Override
-    public boolean updateEmployees(List<Employee> employees) {
+    private boolean updateEmployees() {
         try (var writer = Files.newBufferedWriter(Paths.get(fileName))) {
             saveEmployeesOnFile(writer);
             return true;
