@@ -7,8 +7,11 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.text.NumberFormat;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class ProductDAOImp implements ProductDAO {
 
@@ -31,13 +34,15 @@ public class ProductDAOImp implements ProductDAO {
         this.products = new ArrayList<>();
         try (var reader = Files.newBufferedReader(Paths.get(fileName))) {
             saveProductsOnList(reader);
-        } catch (IOException | NumberFormatException e) {
+        } catch (Exception e) {
             System.out.println("Error loading file " + fileName);
         }
         return products;
     }
 
-    private void saveProductsOnList(BufferedReader reader) throws IOException {
+    private void saveProductsOnList(BufferedReader reader) throws IOException, ParseException {
+        NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.FRANCE);
+        Number number;
         while (reader.readLine() != null) {
             reader.readLine();
             int code = Integer.parseInt(reader.readLine().trim());
@@ -46,7 +51,8 @@ public class ProductDAOImp implements ProductDAO {
             reader.readLine();
             String description = reader.readLine().trim();
             reader.readLine();
-            double price = Double.parseDouble(reader.readLine().trim());
+            number = numberFormat.parse(reader.readLine().trim());
+            double price = number.doubleValue();
             products.add(new Product(code, name, description, price));
         }
     }
