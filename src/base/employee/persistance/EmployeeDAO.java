@@ -12,8 +12,4 @@ public interface EmployeeDAO {
 
     boolean updateEmployeePassword(int code,String newPassword);
 
-    boolean updateEmployees();
-
-    boolean updateEmployees(List<Employee> employees);
-
 }

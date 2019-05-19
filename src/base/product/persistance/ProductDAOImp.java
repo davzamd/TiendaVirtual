@@ -27,16 +27,6 @@ public class ProductDAOImp implements ProductDAO{
     }
 
     @Override
-    public boolean updateProducts() {
-        return false;
-    }
-
-    @Override
-    public boolean updateProducts(List<Product> products) {
-       return false;
-    }
-
-    @Override
     public boolean updateProductName(int code, String newName) {
         return false;
     }
