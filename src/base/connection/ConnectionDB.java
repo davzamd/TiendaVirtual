@@ -28,11 +28,10 @@ public class ConnectionDB {
         Connection connection = null;
         try{
             connection = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Connection succeed");
-
         }catch (SQLException e){
             System.out.println("cant connect to the database "+DATABASE);
             System.out.println(e.getMessage());
+            System.exit(1);
         }
         return connection;
     }

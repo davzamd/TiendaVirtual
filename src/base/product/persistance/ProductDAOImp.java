@@ -1,13 +1,23 @@
 package base.product.persistance;
 
+import base.connection.ConnectionDB;
+import base.employee.domain.Employee;
+import base.employee.exception.EmployeeException;
+import base.employee.exception.ErrorCode;
 import base.product.domain.Product;
 
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductDAOImp implements ProductDAO{
+public class ProductDAOImp implements ProductDAO {
 
 
+    private static final String TABLE_NAME = "productos";
+    private static final String COLUMN_CODE = "p_codigo";
+    private static final String COLUMN_NAME = "p_nombre";
+    private static final String COLUMN_DESCRIPTION = "p_descripcion";
+    private static final String COLUMN_PRICE = "p_precio";
     private List<Product> products;
 
 
@@ -18,12 +28,43 @@ public class ProductDAOImp implements ProductDAO{
 
     @Override
     public List<Product> readProducts() {
-        return null;
+        this.products = new ArrayList<>();
+        String query = "SELECT * FROM " + TABLE_NAME;
+        try (Connection connection = ConnectionDB.getConnection();
+             Statement statement = connection.createStatement()) {
+            ResultSet result = statement.executeQuery(query);
+            while (result.next()) {
+                int code = result.getInt(COLUMN_CODE);
+                String name = result.getString(COLUMN_NAME);
+                String description = result.getString(COLUMN_DESCRIPTION);
+                double price = result.getDouble(COLUMN_PRICE);
+                this.products.add(new Product(code, name, description, price));
+            }
+            result.close();
+        } catch (SQLException e) {
+            System.out.println("Error al leer productos");
+        }
+        return this.products;
     }
 
     @Override
     public Product getProductByCode(int code) {
-        return null;
+        String query = "SELECT * FROM " + TABLE_NAME + " where " + COLUMN_CODE + " = ?";
+        try (Connection connection = ConnectionDB.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            preparedStatement.setInt(1, code);
+            ResultSet result = preparedStatement.executeQuery();
+            result.next();
+            int newCode = result.getInt(COLUMN_CODE);
+            String name = result.getString(COLUMN_NAME);
+            String description = result.getString(COLUMN_DESCRIPTION);
+            double price = result.getDouble(COLUMN_PRICE);
+
+            result.close();
+            return new Product(newCode, name, description, price);
+        } catch (SQLException e) {
+            throw new IllegalArgumentException("El producto no existe");
+        }
     }
 
     @Override

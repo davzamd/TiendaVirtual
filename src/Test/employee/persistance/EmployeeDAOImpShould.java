@@ -20,18 +20,11 @@ public class EmployeeDAOImpShould {
     }
 
     @Test
-    public void return_false_when_list_is_not_empty() {
-        List<Employee> employees = employeeDAOImp.readEmployees();
-        assertFalse(employees.isEmpty());
-    }
-
-    @Test
     public void return_employee_when_employee_code_exists() {
         int code = 111;
         Employee employee = employeeDAOImp.getEmployeeByCode(code);
         assertNotNull(employee);
     }
-
 
     @Test(expected = EmployeeException.class)
     public void return_exception_when_employee_code_doesnt_exists(){

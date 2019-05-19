@@ -73,7 +73,7 @@ public class OrderManager {
                     System.out.println("Opcion 3 seleccionada");
                     OrderView.printOrderBill(order);
                     orderDAOImp.UpdateOrder(order);
-                }else {
+                } else {
                     System.out.println("No ha agregado productos al pedido");
                 }
                 break;
@@ -96,12 +96,14 @@ public class OrderManager {
         }
         ProductController productController = new ProductController();
 
-        Product product = productController.getProductByCode(code);
-        if (product != null) {
+        try {
+            Product product = productController.getProductByCode(code);
+
             order.addProduct(product);
             OutputData.printSuccess("Producto anadido exitosamente");
-        } else {
-            OutputData.printError("Producto no existe");
+
+        } catch (IllegalArgumentException e) {
+            OutputData.printError(e.getMessage());
         }
     }
 

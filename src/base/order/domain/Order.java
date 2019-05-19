@@ -1,7 +1,6 @@
 package base.order.domain;
 
 import base.product.domain.Product;
-import base.util.Color;
 
 import java.util.ArrayList;
 import java.util.List;
