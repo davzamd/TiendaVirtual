@@ -31,7 +31,7 @@ public class ProductControllerShould {
         assertNotNull(product);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void return_null_when_code_doesnt_exists() {
         int code = 22243134;
         Product product = productController.getProductByCode(code);

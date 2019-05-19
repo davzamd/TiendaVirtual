@@ -1,9 +1,6 @@
 package base.product.persistance;
 
 import base.connection.ConnectionDB;
-import base.employee.domain.Employee;
-import base.employee.exception.EmployeeException;
-import base.employee.exception.ErrorCode;
 import base.product.domain.Product;
 
 import java.sql.*;
@@ -69,34 +66,63 @@ public class ProductDAOImp implements ProductDAO {
 
     @Override
     public boolean updateProductName(int code, String newName) {
-        return false;
+        String query = "UPDATE " + TABLE_NAME + " SET " + COLUMN_NAME + " = ? WHERE " + COLUMN_CODE + " = ?";
+        try (Connection connection = ConnectionDB.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
+            preparedStatement.setString(1, newName);
+            preparedStatement.setInt(2, code);
+            return preparedStatement.executeUpdate() == 1;
+        } catch (SQLException e) {
+            return false;
+        }
     }
 
     @Override
     public boolean updateProductCode(int code, int newCode) {
-        return false;
+        String query = "UPDATE " + TABLE_NAME + " SET " + COLUMN_CODE + " = ? WHERE " + COLUMN_CODE + " = ?";
+        try (Connection connection = ConnectionDB.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
+            preparedStatement.setInt(1, newCode);
+            preparedStatement.setInt(2, code);
+            return preparedStatement.executeUpdate() == 1;
+        } catch (SQLException e) {
+            return false;
+        }
     }
 
     @Override
     public boolean updateProductPrice(int code, double newPrice) {
-        return false;
+        String query = "UPDATE " + TABLE_NAME + " SET " + COLUMN_PRICE + " = ? WHERE " + COLUMN_CODE + " = ?";
+        try (Connection connection = ConnectionDB.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
+            preparedStatement.setDouble(1, newPrice);
+            preparedStatement.setInt(2, code);
+            return preparedStatement.executeUpdate() == 1;
+        } catch (SQLException e) {
+            return false;
+        }
     }
 
+
     public boolean checkExistingName(String name) {
-        for (Product product : products) {
-            if (product.getName().toUpperCase().trim().equals(name.toUpperCase().trim())) {
-                return true;
-            }
+        String query = "SELECT COUNT(*) FROM " + TABLE_NAME + " where " + COLUMN_NAME + " = ? ";
+        try (Connection connection = ConnectionDB.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+            preparedStatement.setString(1, name);
+            ResultSet result = preparedStatement.executeQuery();
+            result.next();
+            return result.getInt(1)!=0;
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+            return false;
         }
-        return false;
     }
 
     public boolean checkExistingCode(int code) {
-        for (Product product : products) {
-            if (product.getCode() == code) {
-                return true;
-            }
+        try {
+            return getProductByCode(code) != null;
+        } catch (IllegalArgumentException e) {
+            return false;
         }
-        return false;
     }
 }
