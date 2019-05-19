@@ -61,13 +61,7 @@ public class ProductDAOImp implements ProductDAO {
         return null;
     }
 
-    @Override
-    public boolean updateProducts() {
-        return updateProducts(this.products);
-    }
-
-    @Override
-    public boolean updateProducts(List<Product> products) {
+    private boolean updateProducts() {
         try (var writer = Files.newBufferedWriter(Paths.get(fileName))) {
             saveProductsOnFile(writer);
             return true;

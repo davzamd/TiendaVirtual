@@ -20,10 +20,6 @@ public class ProductController {
         return productDAOImp.getProductByCode(code);
     }
 
-    public boolean updateProducts() {
-        return productDAOImp.updateProducts();
-    }
-
     public boolean updateProductName(int code, String newName) {
         return productDAOImp.updateProductName(code, newName);
     }

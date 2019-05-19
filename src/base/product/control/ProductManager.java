@@ -55,7 +55,6 @@ public class ProductManager {
                 ProductView.modifyCode();
                 break;
         }
-        updateProducts();
     }
 
     public boolean changeProductName(String name) {
@@ -101,7 +100,4 @@ public class ProductManager {
         return productController.getProducts();
     }
 
-    public void updateProducts() {
-        productController.updateProducts();
-    }
 }
