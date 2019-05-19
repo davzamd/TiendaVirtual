@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc261f30-39f3-40a6-90f3-99e60bf52adc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/base/employee/persistance/EmployeeDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/employee/persistance/EmployeeDAOImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" afterDir="false" />
-    </list>
+    <list default="true" id="bc261f30-39f3-40a6-90f3-99e60bf52adc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="383">
@@ -28,6 +25,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/products.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -70,15 +76,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/factura.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -174,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/base/model/employee/persistance/EmployeeDAO.java" />
         <option value="$PROJECT_DIR$/src/Test/product/controller/ProductControllerShould.java" />
         <option value="$PROJECT_DIR$/src/base/model/product/persistance/ProductDAO.java" />
-        <option value="$PROJECT_DIR$/products.txt" />
         <option value="$PROJECT_DIR$/src/base/model/product/persistance/ProductDAOImp.java" />
         <option value="$PROJECT_DIR$/src/Test/product/persistance/ProductDAOImpShould.java" />
         <option value="$PROJECT_DIR$/src/base/View/EmployeeView.java" />
@@ -215,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/base/product/persistance/ProductDAO.java" />
         <option value="$PROJECT_DIR$/src/base/employee/persistance/EmployeeDAOImp.java" />
         <option value="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" />
+        <option value="$PROJECT_DIR$/products.txt" />
       </list>
     </option>
   </component>
@@ -515,17 +512,11 @@
       <workItem from="1557842557790" duration="14141000" />
       <workItem from="1557904447414" duration="18447000" />
       <workItem from="1558188324277" duration="1453000" />
-      <workItem from="1558256076626" duration="4008000" />
+      <workItem from="1558256076626" duration="4309000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_in_TiendaVirtual - 2019.05.15 at 11h 27m 06s.xml">
-      <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test_in_TiendaVirtual - 2019.05.15 at 11h 27m 47s.xml">
-      <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test_in_TiendaVirtual - 2019.05.15 at 11h 28m 34s.xml">
       <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
     </history-entry>
@@ -550,19 +541,26 @@
     <history-entry file="Test_in_TiendaVirtual - 2019.05.18 at 18h 39m 38s.xml">
       <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test_in_TiendaVirtual - 2019.05.19 at 13h 06m 54s.xml">
+      <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_in_TiendaVirtual - 2019.05.19 at 13h 07m 15s.xml">
+      <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60907000" />
+    <option name="totallyTimeSpent" value="61208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.50136983" side_tool="true" weight="0.25767368" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.28594506" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.28594506" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -675,13 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/products.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -925,6 +916,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
         </state>
       </provider>
     </entry>
