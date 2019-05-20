@@ -4,6 +4,8 @@
     <list default="true" id="bc261f30-39f3-40a6-90f3-99e60bf52adc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/factura.txt" beforeDir="false" afterPath="$PROJECT_DIR$/factura.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/product/control/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/product/control/ProductManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/product/persistance/ProductDAOImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/product/persistance/ProductDAOImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/base/product/control/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/control/ProductManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/base/product/persistance/ProductDAOImp.java" afterDir="false" />
     </list>
@@ -50,7 +52,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="335">
               <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -568,7 +570,7 @@
       <workItem from="1557842557790" duration="14141000" />
       <workItem from="1557904447414" duration="18447000" />
       <workItem from="1558188324277" duration="2008000" />
-      <workItem from="1558343335578" duration="3588000" />
+      <workItem from="1558343335578" duration="3804000" />
     </task>
     <servers />
   </component>
@@ -605,7 +607,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71238000" />
+    <option name="totallyTimeSpent" value="71454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -970,7 +972,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/product/control/ProductManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="335">
           <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
