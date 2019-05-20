@@ -15,17 +15,11 @@ public class ProductDAOImp implements ProductDAO {
     private static final String COLUMN_NAME = "p_nombre";
     private static final String COLUMN_DESCRIPTION = "p_descripcion";
     private static final String COLUMN_PRICE = "p_precio";
-    private List<Product> products;
 
-
-    public ProductDAOImp() {
-        this.products = new ArrayList<>();
-        readProducts();
-    }
 
     @Override
     public List<Product> readProducts() {
-        this.products = new ArrayList<>();
+        List<Product> products = new ArrayList<>();
         String query = "SELECT * FROM " + TABLE_NAME;
         try (Connection connection = ConnectionDB.getConnection();
              Statement statement = connection.createStatement()) {
@@ -35,13 +29,13 @@ public class ProductDAOImp implements ProductDAO {
                 String name = result.getString(COLUMN_NAME);
                 String description = result.getString(COLUMN_DESCRIPTION);
                 double price = result.getDouble(COLUMN_PRICE);
-                this.products.add(new Product(code, name, description, price));
+                products.add(new Product(code, name, description, price));
             }
             result.close();
         } catch (SQLException e) {
             System.out.println("Error al leer productos");
         }
-        return this.products;
+        return products;
     }
 
     @Override
