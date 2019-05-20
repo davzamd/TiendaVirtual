@@ -59,9 +59,11 @@ public class ProductManager {
 
     public boolean changeProductName(String name) {
         if (!productController.checkExistingName(name)) {
-            productController.updateProductName(productSelectedCode, name);
-            System.out.println("El nombre a cambiado a " + name);
-            return true;
+            boolean changed = productController.updateProductName(productSelectedCode, name);
+            if (changed) {
+                System.out.println("El nombre a cambiado a " + name);
+            }
+            return changed;
         }
         OutputData.printError("Ya existe un producto con el nombre " + name);
         return false;
@@ -69,9 +71,11 @@ public class ProductManager {
 
     public boolean changeProductPrice(double price) {
         if (price > 0) {
-            productController.updateProductPrice(productSelectedCode, price);
-            System.out.println("\nEl precio ha cambiado a " + price);
-            return true;
+            boolean changed = productController.updateProductPrice(productSelectedCode, price);
+            if (changed) {
+                System.out.println("\nEl precio ha cambiado a " + price);
+            }
+            return changed;
         }
         OutputData.printError("El precio no puede ser negativo");
         return false;
@@ -79,9 +83,11 @@ public class ProductManager {
 
     public boolean changeProductCode(int code) {
         if (!productController.checkExistingCode(code)) {
-            productController.updateProductCode(productSelectedCode, code);
-            System.out.println("El codigo ha cambiado a " + code);
-            return true;
+            boolean changed = productController.updateProductCode(productSelectedCode, code);
+            if (changed) {
+                System.out.println("El codigo ha cambiado a " + code);
+            }
+            return changed;
         }
         OutputData.printError("Ya existe un producto con es codigo " + code);
         return false;
