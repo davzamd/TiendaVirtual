@@ -46,10 +46,11 @@ public class OrderManager {
 
         OrderView.askForProductsQuantity();
         quantity = InputData.getOption(1, maxOption);
-
+        OutputData.borrarPantalla();
         do {
             OrderView.printOrderMenu();
             int option = InputData.getOption(MIN_OPTION, MAX_OPTION);
+            OutputData.borrarPantalla();
             actionByOption(option);
         } while (!orderFinished);
     }
@@ -57,6 +58,7 @@ public class OrderManager {
     private void actionByOption(int option) {
         switch (option) {
             case ADD_PRODUCT:
+                OutputData.borrarPantalla();
                 if (canAddProducts()) {
                     System.out.println("Opcion 1 seleccionada");
                     OrderView.addProduct();
@@ -65,10 +67,12 @@ public class OrderManager {
                 }
                 break;
             case SHOW_CURRENT_ORDER_PRICE:
+                OutputData.borrarPantalla();
                 System.out.println("Opcion 2 seleccionada");
                 System.out.println("\nPrecio actual del pedido: " + order.getTotalPrice() + "\u20AC");
                 break;
             case SHOW_BILL:
+                OutputData.borrarPantalla();
                 if (!order.getProducts().isEmpty()) {
                     System.out.println("Opcion 3 seleccionada");
                     OrderView.printOrderBill(order);
@@ -78,6 +82,7 @@ public class OrderManager {
                 }
                 break;
             case FINISH_ORDER:
+                OutputData.borrarPantalla();
                 System.out.println("Opcion 4 seleccionada");
                 orderFinished = true;
                 break;
@@ -98,8 +103,8 @@ public class OrderManager {
 
         try {
             Product product = productController.getProductByCode(code);
-
             order.addProduct(product);
+            OutputData.borrarPantalla();
             OutputData.printSuccess("Producto anadido exitosamente");
 
         } catch (IllegalArgumentException e) {

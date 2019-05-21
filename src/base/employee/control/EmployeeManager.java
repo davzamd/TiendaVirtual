@@ -2,6 +2,7 @@ package base.employee.control;
 
 import base.employee.domain.Employee;
 import base.util.Color;
+import base.util.OutputData;
 
 public class EmployeeManager {
 
@@ -28,6 +29,7 @@ public class EmployeeManager {
     public boolean login(int code, String password) {
         employee = employeeController.authenticateEmployee(code, password);
         if (employee != null) {
+            OutputData.borrarPantalla();
             System.out.printf("%n%s %s!", "Bienvenido", employee.getFirstName());
             return true;
         }
@@ -43,6 +45,7 @@ public class EmployeeManager {
         if (passwordOne.equals(passwordTwo)) {
             success = employeeController.updateEmployeePassword(employee.getCode(), passwordOne);
         }
+        OutputData.borrarPantalla();
         System.out.println(success ?
                 Color.SUCCESS + "Password modified successfully!"
                 : Color.ERROR + "Password didnt modify");

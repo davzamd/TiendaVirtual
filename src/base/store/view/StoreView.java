@@ -6,9 +6,9 @@ import base.util.Color;
 public class StoreView {
 
     public static void welcome(){
-        System.out.println(Color.DEFAULT+"**********************************************************************************");
+        System.out.println(Color.WELCOME+"**********************************************************************************");
         System.out.println("Bienvenido por favor ingrese su codigo y contraseña para ingresar al sistema");
-        System.out.println("**********************************************************************************");
+        System.out.println("**********************************************************************************"+Color.DEFAULT);
     }
 
     public static void printMainMenu() {
