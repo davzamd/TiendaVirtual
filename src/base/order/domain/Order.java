@@ -36,10 +36,10 @@ public class Order {
         bill.append("\n\tFactura Simplificada: ");
         bill.append("\n------------------------------------------------------------------------------------\n");
         for (Product product : products) {
-            bill.append(String.format("%s \t\t\t\t%d%n", "Codigo:", product.getCode()));
-            bill.append(String.format("%s \t\t\t\t%s%n", "Nombre:", product.getName()));
-            bill.append(String.format("%s\t\t\t%s%n", "Descripcion:", product.getDescription()));
-            bill.append(String.format("%s \t\t\t\t%.2f%n%n", "Precio:", product.getPrice()));
+            bill.append(String.format("%-15s%d%n", "Codigo:", product.getCode()));
+            bill.append(String.format("%-15s%s%n", "Nombre:", product.getName()));
+            bill.append(String.format("%-15s%s%n", "Descripcion:", product.getDescription()));
+            bill.append(String.format("%-15s%.2f%n%n", "Precio:", product.getPrice()));
         }
         bill.append("------------------------------------------------------------------------------------\n");
         bill.append(String.format("\t%s %s%s%n", "El precio TOTAL es:", getTotalPrice(),"\u20AC"));

@@ -1,0 +1,27 @@
+[empleado]
+[code]
+222
+[nombre]
+Gigabyte B450M DS3H
+[descripcion]
+Placa base GIGABYTE serie 400 con tecnología AMD StoreMI
+[precio]
+65.00
+[empleado]
+[code]
+223
+[nombre]
+Kingston A400 SSD 240GB
+[descripcion]
+Disco duro A400 de estado sólido de Kingston
+[precio]
+33.00
+[empleado]
+[code]
+224
+[nombre]
+224
+[descripcion]
+Ordenador portátil con Intel Core i5, 8GB RAM, 256GB SSD
+[precio]
+600.00

@@ -33,8 +33,10 @@ public class ProductManager {
     }
 
     public void modifyProducts() {
+        OutputData.borrarPantalla();
         ProductView.printProducts();
         ProductView.selectProduct();
+        OutputData.borrarPantalla();
         ProductView.printModifyMenu();
         int option = InputData.getOption(MIN_OPTION, MAX_OPTION);
         actionByOption(option);
@@ -43,14 +45,17 @@ public class ProductManager {
     private void actionByOption(int option) {
         switch (option) {
             case MODIFY_NAME:
+                OutputData.borrarPantalla();
                 System.out.println("Opcion 1 seleccionada");
                 ProductView.modifyName();
                 break;
             case MODIFY_PRICE:
+                OutputData.borrarPantalla();
                 System.out.println("Opcion 2 seleccionada");
                 ProductView.modifyPrice();
                 break;
             case MODIFY_CODE:
+                OutputData.borrarPantalla();
                 System.out.println("Opcion 3 seleccionada");
                 ProductView.modifyCode();
                 break;
@@ -61,7 +66,8 @@ public class ProductManager {
         if (!productController.checkExistingName(name)) {
             boolean changed = productController.updateProductName(productSelectedCode, name);
             if (changed) {
-                System.out.println("El nombre a cambiado a " + name);
+                OutputData.borrarPantalla();
+                OutputData.printSuccess("El nombre a cambiado a " + name);
             }
             return changed;
         }
@@ -73,7 +79,8 @@ public class ProductManager {
         if (price > 0) {
             boolean changed = productController.updateProductPrice(productSelectedCode, price);
             if (changed) {
-                System.out.println("\nEl precio ha cambiado a " + price);
+                OutputData.borrarPantalla();
+                OutputData.printSuccess("\nEl precio ha cambiado a " + price);
             }
             return changed;
         }
@@ -85,7 +92,8 @@ public class ProductManager {
         if (!productController.checkExistingCode(code)) {
             boolean changed = productController.updateProductCode(productSelectedCode, code);
             if (changed) {
-                System.out.println("El codigo ha cambiado a " + code);
+                OutputData.borrarPantalla();
+                OutputData.printSuccess("El codigo ha cambiado a " + code);
             }
             return changed;
         }

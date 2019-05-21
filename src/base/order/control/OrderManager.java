@@ -46,10 +46,11 @@ public class OrderManager {
 
         OrderView.askForProductsQuantity();
         quantity = InputData.getOption(1, maxOption);
-
+        OutputData.borrarPantalla();
         do {
             OrderView.printOrderMenu();
             int option = InputData.getOption(MIN_OPTION, MAX_OPTION);
+            OutputData.borrarPantalla();
             actionByOption(option);
         } while (!orderFinished);
     }
@@ -57,6 +58,7 @@ public class OrderManager {
     private void actionByOption(int option) {
         switch (option) {
             case ADD_PRODUCT:
+                OutputData.borrarPantalla();
                 if (canAddProducts()) {
                     System.out.println("Opcion 1 seleccionada");
                     OrderView.addProduct();
@@ -69,15 +71,17 @@ public class OrderManager {
                 System.out.println("\nPrecio actual del pedido: " + order.getTotalPrice() + "\u20AC");
                 break;
             case SHOW_BILL:
+                OutputData.borrarPantalla();
                 if (!order.getProducts().isEmpty()) {
                     System.out.println("Opcion 3 seleccionada");
                     OrderView.printOrderBill(order);
                     orderDAOImp.UpdateOrder(order);
                 }else {
-                    System.out.println("No ha agregado productos al pedido");
+                    OutputData.printError("No ha agregado productos al pedido");
                 }
                 break;
             case FINISH_ORDER:
+                OutputData.borrarPantalla();
                 System.out.println("Opcion 4 seleccionada");
                 orderFinished = true;
                 break;
@@ -99,7 +103,8 @@ public class OrderManager {
         Product product = productController.getProductByCode(code);
         if (product != null) {
             order.addProduct(product);
-            OutputData.printSuccess("Producto anadido exitosamente");
+            OutputData.borrarPantalla();
+            OutputData.printSuccess("\nProducto anadido exitosamente");
         } else {
             OutputData.printError("Producto no existe");
         }
