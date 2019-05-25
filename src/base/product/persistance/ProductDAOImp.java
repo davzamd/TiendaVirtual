@@ -79,7 +79,7 @@ public class ProductDAOImp implements ProductDAO {
     private void saveProductsOnFile(BufferedWriter writer) throws IOException {
         for (Product product : products) {
             writer.write(String.format("%s%n%s%n%d%n%s%n%s%n%s%n%s%n%s%n%.2f%n",
-                    "[empleado]",
+                    "[producto]",
                     "[code]",
                     product.getCode(),
                     "[nombre]",
