@@ -16,3 +16,12 @@ Sara
 Brown
 [contraseña]
 33678
+[empleado]
+[code]
+113
+[nombre]
+Elver
+[apellidos]
+Galarga
+[contraseña]
+666
