@@ -1,0 +1,11 @@
+
+	Factura Simplificada: 
+------------------------------------------------------------------------------------
+Codigo: 				223
+Nombre: 				Kingston A400 SSD 240GB
+Descripcion:			Disco duro A400 de estado sólido de Kingston
+Precio: 				32.95
+
+------------------------------------------------------------------------------------
+	El precio TOTAL es: 32.95€
+	Atendido por: Mario

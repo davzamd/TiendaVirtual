@@ -1,7 +1,7 @@
 package Test.product.controller;
 
-import base.controller.product.ProductController;
-import base.model.product.domain.Product;
+import base.product.control.ProductController;
+import base.product.domain.Product;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -31,7 +31,7 @@ public class ProductControllerShould {
         assertNotNull(product);
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void return_null_when_code_doesnt_exists() {
         int code = 22243134;
         Product product = productController.getProductByCode(code);
