@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc261f30-39f3-40a6-90f3-99e60bf52adc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/employee/control/EmployeeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/employee/control/EmployeeManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/order/control/OrderManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/order/control/OrderManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/product/control/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/product/control/ProductManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/control/StoreManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/control/StoreManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/view/StoreView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/store/view/StoreView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/util/Color.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/util/Color.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TiendaVirtual/base/util/OutputData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TiendaVirtual/base/util/OutputData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employees.txt" beforeDir="false" afterPath="$PROJECT_DIR$/employees.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,37 +21,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/order/control/OrderManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="104" column="71" selection-start-line="104" selection-start-column="71" selection-end-line="104" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/base/order/view/OrderView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
+            <state relative-caret-position="585">
               <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -78,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/util/OutputData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="225">
               <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
                 <element signature="e#97#98#0" expanded="true" />
@@ -102,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/store/control/StoreManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
+            <state relative-caret-position="675">
               <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -120,19 +86,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test/employee/controller/EmployeeControllerShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="210">
+              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/factura.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/employees.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="285">
               <caret line="26" column="102" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -142,7 +122,6 @@
         </entry>
       </file>
     </leaf>
-    &gt;&gt;&gt;&gt;&gt;&gt;&gt; DataBase
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -237,8 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,53 +226,14 @@
             <path>
               <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
               <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="employee" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TiendaVirtual" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TiendaVirtual" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -482,13 +420,11 @@
       <workItem from="1558343335578" duration="3804000" />
       <workItem from="1559126694811" duration="394000" />
       <workItem from="1559144665465" duration="50000" />
+      <workItem from="1564657424669" duration="211000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_in_TiendaVirtual - 2019.05.19 at 23h 10m 22s.xml">
-      <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test_in_TiendaVirtual - 2019.05.19 at 23h 10m 46s.xml">
       <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
     </history-entry>
@@ -516,25 +452,29 @@
     <history-entry file="Test_in_TiendaVirtual - 2019.05.29 at 12h 48m 22s.xml">
       <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test_in_TiendaVirtual - 2019.08.01 at 13h 05m 31s.xml">
+      <configuration name="Test in TiendaVirtual" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31191000" />
+    <option name="totallyTimeSpent" value="31402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.50136983" side_tool="true" weight="0.25767368" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.27786753" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49863014" visible="true" weight="0.2819063" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32876712" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.50080776" side_tool="true" weight="0.40684932" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32876712" />
@@ -618,7 +558,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/employees.txt" />
     <entry file="file://$PROJECT_DIR$/products.txt" />
     <entry file="file://$PROJECT_DIR$/src/base/connection/DBConnection.java" />
     <entry file="file://$PROJECT_DIR$/src/base/order/persistance/OrderDAO.java">
@@ -736,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/factura.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/base/product/view/ProductView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -792,7 +724,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/order/control/OrderManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
+        <state relative-caret-position="1380">
           <caret line="104" column="71" selection-start-line="104" selection-start-column="71" selection-end-line="104" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -804,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/order/view/OrderView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="420">
           <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -816,7 +748,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
+        <state relative-caret-position="585">
           <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -833,7 +765,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/util/OutputData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="225">
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="e#97#98#0" expanded="true" />
@@ -853,7 +785,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/store/control/StoreManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
+        <state relative-caret-position="675">
           <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -870,7 +802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/base/employee/control/EmployeeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="285">
           <caret line="26" column="102" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -880,10 +812,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/employee/controller/EmployeeControllerShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        <state relative-caret-position="210">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/factura.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employees.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
